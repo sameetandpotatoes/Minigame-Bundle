@@ -27,9 +27,9 @@ public class FinalProjectRunner
 	private static Player one;
 	private static Player two;
 	public static void main(String[] args)
-	{	
+	{
 		JFrame frame = new JFrame();
-		
+
 		//The buttons that will be displayed on the frame
 		JButton button = new JButton("Othello");
 		button.setFont(new Font("SansSerif", 0, 14));
@@ -43,7 +43,7 @@ public class FinalProjectRunner
 		button5.setFont(new Font("SansSerif", 0, 14));
 		JButton button3 = new JButton("End Program");
 		button3.setFont(new Font("SansSerif", 0, 14));
-	
+
 		//Names
 		JLabel sameet = new JLabel("Sameet Sapra- Othello, Chess");
 		sameet.setFont(new Font("Monospaced", Font.BOLD, 13));
@@ -54,7 +54,7 @@ public class FinalProjectRunner
 		JLabel period = new JLabel("Period 7");
 		period.setFont(new Font("Monospaced", Font.BOLD, 13));
 		JPanel creditsPanel = new JPanel();
-		
+
 		//creditsPanel will contain the names
 		creditsPanel.setFont(new Font("Monospaced", Font.BOLD, 15));
 		creditsPanel.setBorder(new TitledBorder(new EtchedBorder(), "Created by:"));
@@ -63,7 +63,7 @@ public class FinalProjectRunner
 		creditsPanel.add(yaseen);
 		creditsPanel.add(tim);
 		creditsPanel.add(period);
-		
+
 		//panel will contain all of the buttons and the creditsPanel
 		JPanel panel = new JPanel();
 		panel.setLayout(new GridLayout(7, 1));
@@ -78,8 +78,8 @@ public class FinalProjectRunner
 
 		//frame contains the panel
 		frame.add(panel);
-		
-		
+
+
 		//ActionListener for Othello
 		class OthelloListener implements ActionListener
 		{
@@ -87,14 +87,14 @@ public class FinalProjectRunner
 			{
 				//Sets up another frame with buttons for choosing 1 player or 2 player
 				JFrame frame = new JFrame();
-				
-				JPanel panel = new JPanel(); 
-				
+
+				JPanel panel = new JPanel();
+
 				JButton button = new JButton("User vs. Computer");
 				button.setFont(new Font("SansSerif", 0, 14));
 				JButton button1 = new JButton("User vs. User");
 				button1.setFont(new Font("SansSerif", 0, 14));
-				
+
 				panel.add(button);
 				panel.add(button1);
 				frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -128,14 +128,14 @@ public class FinalProjectRunner
 			{
 				//Sets up another frame with buttons for choosing 1 player or 2 player
 				JFrame frame = new JFrame();
-				
-				JPanel panel = new JPanel(); 
-				
+
+				JPanel panel = new JPanel();
+
 				JButton button = new JButton("User vs. Computer");
 				button.setFont(new Font("SansSerif", 0, 14));
 				JButton button1 = new JButton("User vs. User");
 				button1.setFont(new Font("SansSerif", 0, 14));
-				
+
 				panel.add(button);
 				panel.add(button1);
 				frame.add(panel);
@@ -148,19 +148,19 @@ public class FinalProjectRunner
 					{
 						//Sets up another frame for directions/choosing players
 						JFrame frame= new JFrame();
-						
+
 						JButton iniesta = new JButton("Andres Iniesta");
 						JButton ronaldo = new JButton("Cristiano Ronaldo");
 						JButton messi = new JButton("Lionel Messi");
 						JButton ozil = new JButton("Mezut Ozil");
-								
+
 						JPanel directions = new JPanel();
 						directions.setLayout(new GridLayout(3, 1));
 						directions.setBorder(new TitledBorder(new EtchedBorder(), "Directions"));
 						directions.add(new JLabel("Click on the buttons to choose your players"));
 						directions.add(new JLabel("Player A: Uses W, A, S, D"));
 						directions.add(new JLabel("Player B: Uses arrow keys"));
-						
+
 						JPanel playerPanel = new JPanel();
 						playerPanel.setLayout(new GridLayout(5, 1));
 						playerPanel.add(directions);
@@ -168,7 +168,7 @@ public class FinalProjectRunner
 						playerPanel.add(ronaldo);
 						playerPanel.add(messi);
 						playerPanel.add(ozil);
-						
+
 						class IniestaListener implements ActionListener
 						{
 							public void actionPerformed(ActionEvent event)
@@ -217,13 +217,13 @@ public class FinalProjectRunner
 						ActionListener listen1 = new RonaldoListener();
 						ActionListener listen2 = new MessiListener();
 						ActionListener listen3 = new OzilListener();
-						
+
 						//Attaches listeners to buttons
 						iniesta.addActionListener(listen);
 						ronaldo.addActionListener(listen1);
 						messi.addActionListener(listen2);
 						ozil.addActionListener(listen3);
-						
+
 						frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 						frame.add(playerPanel);
 						frame.setSize(280,500);
@@ -238,19 +238,19 @@ public class FinalProjectRunner
 					{
 						//Sets up another frame for directions/choosing players
 						JFrame frame= new JFrame();
-						
+
 						JButton iniesta = new JButton("Andres Iniesta");
 						JButton ronaldo = new JButton("Cristiano Ronaldo");
 						JButton messi = new JButton("Lionel Messi");
 						JButton ozil = new JButton("Mezut Ozil");
-								
+
 						JPanel directions = new JPanel();
 						directions.setLayout(new GridLayout(3, 1));
 						directions.setBorder(new TitledBorder(new EtchedBorder(), "Directions"));
 						directions.add(new JLabel("Click on the buttons to choose your players"));
 						directions.add(new JLabel("Player A: Uses W, A, S, D"));
 						directions.add(new JLabel("Player B: Uses arrow keys"));
-						
+
 						JPanel playerPanel = new JPanel();
 						playerPanel.setLayout(new GridLayout(5, 1));
 						playerPanel.add(directions);
@@ -258,7 +258,7 @@ public class FinalProjectRunner
 						playerPanel.add(ronaldo);
 						playerPanel.add(messi);
 						playerPanel.add(ozil);
-						
+
 						class IniestaListener implements ActionListener
 						{
 							public void actionPerformed(ActionEvent event)
@@ -267,7 +267,7 @@ public class FinalProjectRunner
 									one = new AndresIniesta();
 								else
 									two = new AndresIniesta();
-								
+
 								if (one != null && two != null)
 								{
 									SoccerWorld theBoard=new SoccerWorld(new BoundedGrid(17,17),one , two);
@@ -300,14 +300,14 @@ public class FinalProjectRunner
 									one = new LionelMessi();
 								else
 									two = new LionelMessi();
-								
+
 								if (one != null && two != null)
 								{
 									SoccerWorld theBoard=new SoccerWorld(new BoundedGrid(17,17),one , two);
 									theBoard.show();
 									theBoard.play();
 								}
-							
+
 							}
 						}
 						class OzilListener implements ActionListener
@@ -330,13 +330,13 @@ public class FinalProjectRunner
 						ActionListener listen1 = new RonaldoListener();
 						ActionListener listen2 = new MessiListener();
 						ActionListener listen3 = new OzilListener();
-						
+
 						//Attaches listeners to buttons
 						iniesta.addActionListener(listen);
 						ronaldo.addActionListener(listen1);
 						messi.addActionListener(listen2);
 						ozil.addActionListener(listen3);
-						
+
 						frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 						frame.add(playerPanel);
 						frame.setSize(280,500);
@@ -347,7 +347,7 @@ public class FinalProjectRunner
 				}
 				button.addActionListener(new OneListener());
 				button1.addActionListener(new TwoListener());
-			}	
+			}
 		}
 		//ActionListener for Minesweeper
 		class MineSweeperListener implements ActionListener
@@ -356,7 +356,7 @@ public class FinalProjectRunner
 			{
 		        new MinesweeperWorld().show();
 			}
-		}	
+		}
 		//ActionListener for Chess
 		class ChessListener implements ActionListener
 		{
@@ -387,7 +387,7 @@ public class FinalProjectRunner
 		ActionListener chessListener = new ChessListener();
 		ActionListener worldListener = new WorldListener();
 		ActionListener endProgram = new EndProgram();
-		
+
 		//Attaches listeners to buttons
 		button.addActionListener(othelloListener);
 		button1.addActionListener(soccerListener);
@@ -395,7 +395,7 @@ public class FinalProjectRunner
 		button4.addActionListener(chessListener);
 		button5.addActionListener(worldListener);
 		button3.addActionListener(endProgram);
-		
+
 		frame.setSize(330, 600);
 		frame.setResizable(false);
 		frame.setLocation(750, 300);
