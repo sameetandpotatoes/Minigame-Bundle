@@ -6,4 +6,8 @@ This is my final project for AP Computer Science. This project incorporates a va
 - World Conquest (1 Player)
 - Minesweeper (1 Player)
 
+#Screenshots
+
+![ScreenShot](https://raw2.github.com/sameetandpotatoes/Minigame-Bundle/master/Screenshots/Chess.png)
+![ScreenShot](https://raw2.github.com/sameetandpotatoes/Minigame-Bundle/master/Screenshots/Chess.png)
 [![endorse](https://api.coderwall.com/sameetandpotatoes/endorsecount.png)](https://coderwall.com/sameetandpotatoes)
