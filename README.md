@@ -5,3 +5,5 @@ This is my final project for AP Computer Science. This project incorporates a va
 - Chess (2 Player)
 - World Conquest (1 Player)
 - Minesweeper (1 Player)
+
+[![endorse](https://api.coderwall.com/sameetandpotatoes/endorsecount.png)](https://coderwall.com/sameetandpotatoes)
