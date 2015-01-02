@@ -8,8 +8,9 @@ This is my final project for AP Computer Science. This project incorporates a va
 
 #Screenshots
 
-![ScreenShot](https://raw2.github.com/sameetandpotatoes/Minigame-Bundle/master/Screenshots/Chess.png)
-![ScreenShot](https://raw2.github.com/sameetandpotatoes/Minigame-Bundle/master/Screenshots/Othello.png)
-![ScreenShot](https://raw2.github.com/sameetandpotatoes/Minigame-Bundle/master/Screenshots/Soccer.png)
-![ScreenShot](https://raw2.github.com/sameetandpotatoes/Minigame-Bundle/master/Screenshots/Mine.png)
+![ScreenShot](https://raw.githubusercontent.com/sameetandpotatoes/Minigame-Bundle/master/Screenshots/Chess.png)
+![ScreenShot](https://raw.githubusercontent.com/sameetandpotatoes/Minigame-Bundle/master/Screenshots/Othello.png)
+![ScreenShot](https://raw.githubusercontent.com/sameetandpotatoes/Minigame-Bundle/master/Screenshots/Mine.png)
+![ScreenShot](https://raw.githubusercontent.com/sameetandpotatoes/Minigame-Bundle/master/Screenshots/Soccer.png)
+
 [![endorse](https://api.coderwall.com/sameetandpotatoes/endorsecount.png)](https://coderwall.com/sameetandpotatoes)
